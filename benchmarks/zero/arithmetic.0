@@ -1,0 +1,15 @@
+pub fun main(world: World) -> Void raises {
+    let mut i: u64 = 0_u64
+    let mut acc: u64 = 0_u64
+
+    while i < 20000000_u64 {
+        acc = acc + ((i * 1664525_u64 + 1013904223_u64) % 1000003_u64)
+        i = i + 1_u64
+    }
+
+    if acc == 10000017000695_u64 {
+        check world.out.write("ok\n")
+    } else {
+        check world.out.write("bad\n")
+    }
+}

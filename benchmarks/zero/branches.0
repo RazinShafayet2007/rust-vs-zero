@@ -1,0 +1,24 @@
+pub fun main(world: World) -> Void raises {
+    let mut i: u64 = 0_u64
+    let mut total: u64 = 0_u64
+
+    while i < 30000000_u64 {
+        let value = i % 7_u64
+        if value == 0_u64 {
+            total = total + 3_u64
+        } else {
+            if value == 1_u64 || value == 2_u64 {
+                total = total + 5_u64
+            } else {
+                total = total + 1_u64
+            }
+        }
+        i = i + 1_u64
+    }
+
+    if total == 72857146_u64 {
+        check world.out.write("ok\n")
+    } else {
+        check world.out.write("bad\n")
+    }
+}

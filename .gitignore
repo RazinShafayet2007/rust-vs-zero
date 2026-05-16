@@ -1,0 +1,7 @@
+.out/
+.zero/
+results/
+ui/results.js
+node_modules/
+*.log
+.DS_Store

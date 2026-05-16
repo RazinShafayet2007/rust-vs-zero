@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rust vs Zero Benchmarks</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Local microbenchmark report</p>
+        <h1>Rust vs Zero</h1>
+        <p class="lede">Five small workloads from startup to parser-style scanning. Results are generated locally by <code>npm run bench</code>.</p>
+      </section>
+
+      <section id="summary" class="summary"></section>
+      <section id="cards" class="cards"></section>
+
+      <section class="panel">
+        <h2>Raw Results</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Case</th>
+                <th>Language</th>
+                <th>Status</th>
+                <th>Build ms</th>
+                <th>Run median ms</th>
+                <th>Artifact bytes</th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="notes">
+        <h2>Notes</h2>
+        <p>These numbers are for quick local comparison only. CPU load, compiler versions, target choices, and benchmark shape all affect the result.</p>
+      </section>
+    </main>
+    <script src="results.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
