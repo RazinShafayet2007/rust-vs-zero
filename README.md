@@ -4,7 +4,7 @@ Local benchmark suite for comparing small Rust and Zero programs on the same mac
 
 This project is intentionally lightweight. It compiles equivalent benchmark programs, runs each executable multiple times, validates stdout, records build/runtime/artifact-size metrics, and renders the latest results in a static UI.
 
-Fork or clone this repository if you want to run the benchmarks on your own machine. The generated results are local to your hardware, OS, compiler versions, and current system load, so running them yourself is the useful comparison point.
+Clone this repository if you want to run the benchmarks on your own machine. The generated results are local to your hardware, OS, compiler versions, and current system load, so running them yourself is the useful comparison point.
 
 ## Requirements
 
@@ -28,10 +28,10 @@ ZERO_BIN=/path/to/zero npm run bench
 
 ## Run Benchmarks
 
-Clone your fork or this repository, then enter the project folder:
+Clone the repository, then enter the project folder:
 
 ```sh
-git clone <your-rust-vs-zero-repo-url>
+git clone https://github.com/RazinShafayet2007/rust-vs-zero.git
 cd rust-vs-zero
 ```
 
